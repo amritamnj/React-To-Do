@@ -80,6 +80,28 @@ app.post("/tasks/:id/move", (req, res) => {
   });
 });
 
+app.post("/tasks/:id/update", async (req, res) => {
+  const { id } = req.params;
+  const { newTitle } = req.body;
+  try {
+    await db.query("UPDATE tasks SET title = ? WHERE id = ?", [newTitle, id]);
+    res.json({ success: true });
+  } catch (error) {
+    res.status(500).json({ error: "Failed to update task" });
+  }
+});
+
+app.post("/columns/:id/update", async (req, res) => {
+  const { id } = req.params;
+  const { newName } = req.body;
+  try {
+    await db.query("UPDATE columns SET name = ? WHERE id = ?", [newName, id]);
+    res.json({ success: true });
+  } catch (error) {
+    res.status(500).json({ error: "Failed to update column" });
+  }
+});
+
 app.listen(5000, () => {
   console.log("✅ Backend running on port 5000");
 });
