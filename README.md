@@ -3,13 +3,13 @@
 A full-stack task management application built with React, TypeScript, Node.js, Express, and MySQL. This app allows users to create, edit, delete, and drag-and-drop tasks between columns in a Kanban-style board.
 
 ## 🚀 Features
-✅ Create, Edit & Delete Tasks
-✅ Drag & Drop Tasks (Reorder within columns)
-✅ Create, Edit & Delete Columns
-✅ Dark Mode Toggle 🌙
-✅ Persistent Data Storage (MySQL database)
-✅ Secure API with Node.js & Express
-✅ Mobile Responsive Design
+- Create, Edit & Delete Tasks
+- Drag & Drop Tasks (Reorder within columns)
+- Create, Edit & Delete Columns
+- Dark Mode Toggle 🌙
+- Persistent Data Storage (MySQL database)
+- Secure API with Node.js & Express
+- Mobile Responsive Design
 
 ## 🛠️ Tech Stack
 
