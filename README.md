@@ -1,4 +1,4 @@
-# Kanban Task Manager (React + Node.js + MySQL)
+# To-Do App (React + Node.js + MySQL)
 
 A full-stack task management application built with React, TypeScript, Node.js, Express, and MySQL. This app allows users to create, edit, delete, and drag-and-drop tasks between columns in a Kanban-style board.
 
