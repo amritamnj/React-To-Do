@@ -88,9 +88,9 @@ Then open `http://localhost:3000` in your browser.
 
 ## 👨‍💻 Future Enhancements
 
-- 🔹 User Authentication (Login/Signup)
-- 🔹 Task Due Dates & Priorities
-- 🔹 Real-time Sync (WebSockets)
+- User Authentication (Login/Signup)
+- Task Due Dates & Priorities
+- Real-time Sync (WebSockets)
 
 ## ⭐ Contribute
 
