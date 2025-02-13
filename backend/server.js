@@ -9,7 +9,7 @@ app.use(express.json());
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "amr123", // Ensure this matches your MySQL password
+  password: "", // Ensure this matches your MySQL password
   database: "todo_app",
 });
 
