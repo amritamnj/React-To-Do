@@ -1,46 +1,97 @@
-# Getting Started with Create React App
+# Kanban Task Manager (React + Node.js + MySQL)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack task management application built with React, TypeScript, Node.js, Express, and MySQL. This app allows users to create, edit, delete, and drag-and-drop tasks between columns in a Kanban-style board.
 
-## Available Scripts
+## 🚀 Features
+- ✅ Create, Edit & Delete Tasks
+- ✅ Drag & Drop Tasks (Reorder within columns)
+- ✅ Create, Edit & Delete Columns
+- ✅ Dark Mode Toggle 🌙
+- ✅ Persistent Data Storage (MySQL database)
+- ✅ Secure API with Node.js & Express
+- ✅ Mobile Responsive Design
 
-In the project directory, you can run:
+## 🛠️ Tech Stack
 
-### `npm start`
+| Technology                      | Usage               |
+|----------------------------------|---------------------|
+| React + TypeScript               | Frontend UI         |
+| Tailwind CSS                     | Styling             |
+| Node.js + Express                | Backend API         |
+| MySQL                            | Database            |
+| @hello-pangea/dnd                | Drag & Drop Functionality |
+| Vercel / Netlify (Optional)      | Deployment          |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 📸 Screenshots
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Light Mode 🌞
 
-### `npm test`
+![image](https://github.com/user-attachments/assets/af5393e0-6f7e-46d3-b385-0c4783958a18)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Dark Mode 🌙
 
-### `npm run build`
+![image](https://github.com/user-attachments/assets/ebbd4a96-1a94-45d8-a5b8-be092384c26b)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📂 Folder Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+/to-do
+ ├── /backend        # Express API & Database
+ │   ├── server.js   # Main Backend Logic
+ │   ├── db.js       # MySQL Database Connection
+ │   ├── /routes     # API Routes
+ ├── /src            # React Frontend
+ │   ├── /components # UI Components
+ │   ├── App.tsx     # Main App File
+ │   ├── index.tsx   # Entry Point
+ ├── package.json    # Dependencies
+ ├── README.md       # Documentation
+```
+## 🛠️ Installation & Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1️⃣ Clone the Repository
 
-### `npm run eject`
+```
+git clone https://github.com/your-username/todo-kanban.git
+cd todo-kanban
+```
+### 2️⃣ Backend Setup (Node.js + MySQL)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Create a MySQL Database and update the `db.js` file with your credentials.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Run the backend:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+cd backend
+npm install
+node server.js
+```
+### 3️⃣ Frontend Setup (React)
+```
+cd ../frontend
+npm install
+npm start
+```
+Then open `http://localhost:3000` in your browser.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🔗 API Endpoints
 
-## Learn More
+| Method | Endpoint                 | Description             |
+|--------|--------------------------|-------------------------|
+| GET    | /columns                 | Get all columns         |
+| POST   | /columns                 | Create a new column     |
+| DELETE | /columns/:id             | Delete a column         |
+| POST   | /tasks                   | Create a task           |
+| POST   | /tasks/:id/update        | Edit a task             |
+| DELETE | /tasks/:id               | Delete a task           |
+| POST   | /tasks/:id/move          | Move a task             |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 👨‍💻 Future Enhancements
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- 🔹 User Authentication (Login/Signup)
+- 🔹 Task Due Dates & Priorities
+- 🔹 Real-time Sync (WebSockets)
+
+## ⭐ Contribute
+
+Pull requests are welcome! Feel free to open an issue or suggest improvements.
